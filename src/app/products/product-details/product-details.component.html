@@ -1,0 +1,15 @@
+<mat-card *ngIf="product" id="productDetails">
+        <mat-card-header>
+          <mat-card-title>
+            <h3>{{selectedProduct.product | uppercase}}</h3>
+          </mat-card-title>
+          <mat-card-subtitle>
+            <p>{{selectedProduct.typed}} - {{selectedProduct.reference | uppercase}} </p>
+          </mat-card-subtitle>
+        </mat-card-header>
+    
+        <mat-card-content>
+          <p>{{selectedProduct.size}} - {{selectedProduct.price}}€ - {{selectedProduct.model}} - {{selectedProduct.color}}</p>
+        </mat-card-content>
+    
+      </mat-card>

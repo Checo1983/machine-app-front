@@ -1,0 +1,32 @@
+{ "products": [
+    {
+      "id": "0",
+      "product": "Camiseta Roja",
+      "typed": "Camiseta",
+      "model": "Fuego",
+      "size": "M",
+      "color": "Rojo",
+      "price": 20,
+      "reference": "REF_FUEGO_ROJO_M"
+    },
+    {
+        "id": "1",
+        "product": "Camiseta Roja",
+        "typed": "Camiseta",
+        "model": "Fuego",
+        "size": "M",
+        "color": "Rojo",
+        "price": 20,
+        "reference": "REF_FUEGO_ROJO_M"
+    },
+    {
+        "id": "2",
+        "product": "Camiseta Roja",
+        "typed": "Camiseta",
+        "model": "Fuego",
+        "size": "M",
+        "color": "Rojo",
+        "price": 20,
+        "reference": "REF_FUEGO_ROJO_M"
+    }
+]}

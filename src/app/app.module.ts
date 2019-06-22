@@ -1,14 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatListModule } from '@angular/material/list';
-import 'hammerjs';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+// Modules
+import { CoreModule } from "./core/core.module";
+import { SharedModule } from "./shared/shared.module";
+import { ProductsModule } from "./products/products.module";
+import { NewBuyModule } from "./newbuy/new-buy.module";
+import { AppRoutingModule } from "./app-routing.module";
+
+
+// Components
+import { AppComponent } from "./app.component";
+import { LandingPageComponent } from "./landing-page/landing-page.component";
+import { ToolbarComponent } from "./toolbar/toolbar.component";
 
 @NgModule({
   declarations: [
@@ -17,13 +22,15 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     ToolbarComponent
   ],
   imports: [
+    CoreModule,
     BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatListModule 
+    HttpClientModule,
+    AppRoutingModule,
+    SharedModule,
+    ProductsModule,
+    NewBuyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
